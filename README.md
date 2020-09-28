@@ -52,8 +52,16 @@ ng add @angular/material
 ![ng-add-material, choose select](ng-add-material-choose.png)  
 
 
+#### Angular Material Theme Base
 
+``src/theme.scss``
+``src/custom-component-themes.scss`` :  
 
+```bash
+ng g m material
+ng g m shared
+ng g c shared/components/sidenav
+```
 
 
 
