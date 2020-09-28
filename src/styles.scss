@@ -2,10 +2,13 @@
 
 @include mat-core();
 @import "./theme.scss";
+@import "./custom-component-themes.scss";
 @include angular-material-theme($theming-material-components-theme);
+@include custom-components-theme($theming-material-components-theme);
 
 .dark-theme {
   @include angular-material-color($dark-theme);
+  @include custom-components-theme($dark-theme);
 }
 
 @include angular-material-typography($typography);

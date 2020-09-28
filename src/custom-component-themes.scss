@@ -1,2 +1,5 @@
+@import "./app/shared/components/sidenav/sidenav.component.scss-theme.scss";
+
 @mixin custom-components-theme($theme) {
+  @include sidenav-component-theme($theme);
 }
