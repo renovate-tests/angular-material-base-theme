@@ -25,3 +25,38 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+---
+
+## my operations
+
+### ng new & run
+
+```bash
+ng new angular-material-base-theme --style=scss --routing=false
+ng serve -o
+```
+
+:link: [Angular 日本語ドキュメンテーション - ng new](https://angular.jp/cli/new)  
+:link: [Angular 日本語ドキュメンテーション - ng serve](https://angular.jp/cli/serve)  
+
+### Angular Material
+
+```bash
+ng add @angular/material
+```
+
+↓ choose select:  
+
+![ng-add-material, choose select](ng-add-material-choose.png)  
+
+
+
+
+
+
+
+
+
+
