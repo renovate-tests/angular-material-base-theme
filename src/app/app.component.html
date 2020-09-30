@@ -1,6 +1,14 @@
-<app-sidenav>
+<app-sidenav #sidenav>
   <div class="container">
     <h1 class="mat-display-3">メインコンテンツ</h1>
     <p>メインコンテンツ内容。</p>
+    <p><button mat-raised-button [color]="sidenav.themeColor" (click)="openDialog(sidenav.themeColor)">ダイアログ...</button></p>
+    <p>通知：
+      <button mat-raised-button [color]="sidenav.themeColor" (click)="openNotificationDefault()">標準の通知</button>&nbsp;
+      <button mat-raised-button [color]="sidenav.themeColor" (click)="openNotificationInfo()">情報の通知</button>&nbsp;
+      <button mat-raised-button [color]="sidenav.themeColor" (click)="openNotificationSuccess()">完了の通知</button>&nbsp;
+      <button mat-raised-button [color]="sidenav.themeColor" (click)="openNotificationWarn()">警告の通知</button>&nbsp;
+      <button mat-raised-button [color]="sidenav.themeColor" (click)="openNotificationError()">エラーの通知</button>&nbsp;
+    </p>
   </div>
 </app-sidenav>

@@ -1,0 +1,35 @@
+@import "~@angular/material/theming";
+
+@mixin dialog-component-theme($config-or-theme) {
+  $config: mat-get-color-config($config-or-theme);
+  $primary: map-get($config, primary);
+  $accent: map-get($config, accent);
+  $warn: map-get($config, warn);
+  $foreground: map-get($config, foreground);
+  $background: map-get($config, background);
+  .custom-dialog {
+    .mat-dialog-container {
+      padding-top: 0px;
+      .mat-dialog-title {
+        padding: 12px 24px;
+        margin-bottom: 0;
+        margin-left: -24px;
+        margin-right: -24px;
+
+        background-color: mat-color($background, app-bar);
+        color: mat-color($foreground, text);
+
+        $color-list: (
+          "primary": $primary,
+          "accent": $accent,
+          "warn": $warn,
+        );
+        @each $key, $val in $color-list {
+          &[color="#{$key}"] {
+            @include _mat-toolbar-color($val);
+          }
+        }
+      }
+    }
+  }
+}

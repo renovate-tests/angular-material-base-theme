@@ -61,8 +61,9 @@ ng add @angular/material
 ng g m material
 ng g m shared
 ng g c shared/components/sidenav
+ng g c shared/components/dialog
+ng g s shared/services/notification
 ```
-
 
 
 
