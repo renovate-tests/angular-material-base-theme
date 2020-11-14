@@ -1,0 +1,353 @@
+PS > node -v
+v14.15.0
+PS > npm -v
+6.14.8
+PS >
+PS > npm install -g @angular/cli
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+\AppData\Roaming\npm\ng -> \AppData\Roaming\npm\node_modules\@angular\cli\bin\ng
+
+> @angular/cli@11.0.1 postinstall \AppData\Roaming\npm\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+PS > ng --version
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 11.0.1
+Node: 14.15.0
+OS: win32 x64
+
+Angular:
+...
+Ivy Workspace:
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1100.1 (cli-only)
+@angular-devkit/core         11.0.1 (cli-only)
+@angular-devkit/schematics   11.0.1 (cli-only)
+@schematics/angular          11.0.1 (cli-only)
+@schematics/update           0.1100.1 (cli-only)
+
+
+PS > cd .angular-material-base-theme\
+PS angular-material-base-theme> dir
+
+    ディレクトリ: angular-material-base-theme
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       2020/10/14      0:33                .github
+d-----       2020/09/29     22:25                dist
+d-----       2020/09/27     21:53                e2e
+d-----       2020/09/28     11:12                node_modules
+d-----       2020/09/28     15:40                src
+-a----       2020/09/27     21:53            852 .browserslistrc
+-a----       2020/09/27     21:53            274 .editorconfig
+-a----       2020/09/27     21:53            631 .gitignore
+-a----       2020/09/27     21:53           4409 angular.json
+-a----       2020/09/27     21:53           1039 karma.conf.js
+-a----       2020/09/28     11:09          15537 ng-add-material-choose.png
+-a----       2020/09/28     11:06         532792 package-lock.json
+-a----       2020/09/28     11:06           1344 package.json
+-a----       2020/09/29     21:56           1762 README.md
+-a----       2020/09/27     21:53            292 tsconfig.app.json
+-a----       2020/09/28     15:45            458 tsconfig.base.json
+-a----       2020/09/27     21:53            475 tsconfig.json
+-a----       2020/09/27     21:53            338 tsconfig.spec.json
+-a----       2020/09/27     21:53           3184 tslint.json
+
+PS angular-material-base-theme> ng -version
+Your global Angular CLI version (11.0.1) is greater than your local version (10.0.8). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+Available Commands:
+  add Adds support for an external library to your project.
+  analytics Configures the gathering of Angular CLI usage metrics. See https://angular.io/cli/usage-analytics-gathering.
+  build (b) Compiles an Angular app into an output directory named dist/ at the given output path. Must be executed from within a workspace directory.
+  deploy Invokes the deploy builder for a specified project or for the default project in the workspace.
+  config Retrieves or sets Angular configuration values in the angular.json file for the workspace.
+  doc (d) Opens the official Angular documentation (angular.io) in a browser, and searches for a given keyword.
+  e2e (e) Builds and serves an Angular app, then runs end-to-end tests using Protractor.
+  generate (g) Generates and/or modifies files based on a schematic.
+  help Lists available commands and their short descriptions.
+  lint (l) Runs linting tools on Angular app code in a given project folder.
+  new (n) Creates a new workspace and an initial Angular app.
+  run Runs an Architect target with an optional custom builder configuration defined in your project.
+  serve (s) Builds and serves your app, rebuilding on file changes.
+  test (t) Runs unit tests in a project.
+  update Updates your application and its dependencies. See https://update.angular.io/
+  version (v) Outputs Angular CLI version.
+  xi18n (i18n-extract) Extracts i18n messages from source code.
+
+For more detailed help run "ng [command name] --help"
+PS angular-material-base-theme> ncu
+Checking angular-material-base-theme\package.json
+[====================] 31/31 100%
+
+ @angular/animations                      ~10.0.2  →    ~11.0.0
+ @angular/cdk                             ^10.2.2  →    ^11.0.0
+ @angular/compiler                        ~10.0.2  →    ~11.0.0
+ @angular/core                            ~10.0.2  →    ~11.0.0
+ @angular/forms                           ~10.0.2  →    ~11.0.0
+ @angular/material                        ^10.2.2  →    ^11.0.0
+ @angular/platform-browser                ~10.0.2  →    ~11.0.0
+ @angular/platform-browser-dynamic        ~10.0.2  →    ~11.0.0
+ @angular/router                          ~10.0.2  →    ~11.0.0
+ rxjs                                      ~6.5.5  →     ~6.6.3
+ tslib                                     ^2.0.0  →     ^2.0.3
+ zone.js                                  ~0.10.3  →    ~0.11.3
+ @angular-devkit/build-angular          ~0.1000.1  →  ~0.1100.1
+ @angular/cli                             ~10.0.1  →    ~11.0.1
+ @angular/compiler-cli                    ~10.0.2  →    ~11.0.0
+ @types/node                             ^12.11.1  →   ^14.14.7
+ @types/jasmine                            ~3.5.0  →     ~3.6.1
+ @types/jasminewd2                         ~2.0.3  →     ~2.0.8
+ codelyzer                          ^6.0.0-next.1  →     ^6.0.1
+ jasmine-core                              ~3.5.0  →     ~3.6.0
+ jasmine-spec-reporter                     ~5.0.0  →     ~6.0.0
+ karma                                     ~5.0.0  →     ~5.2.3
+ karma-coverage-istanbul-reporter          ~3.0.2  →     ~3.0.3
+ karma-jasmine                             ~3.3.0  →     ~4.0.1
+ karma-jasmine-html-reporter               ^1.5.0  →     ^1.5.4
+ ts-node                                   ~8.3.0  →     ~9.0.0
+ typescript                                ~3.9.5  →     ~4.0.5
+
+Run ncu -u to upgrade package.json
+PS angular-material-base-theme> ng update @angular/core @angular/cli
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 31 dependencies.
+Fetching dependency metadata from registry...
+    Updating package.json with dependency @angular-devkit/build-angular @ "0.1100.1" (was "0.1000.8")...
+    Updating package.json with dependency @angular/cli @ "11.0.1" (was "10.0.8")...
+    Updating package.json with dependency @angular/compiler-cli @ "11.0.0" (was "10.0.14")...
+    Updating package.json with dependency codelyzer @ "6.0.1" (was "6.0.0")...
+    Updating package.json with dependency karma @ "5.1.1" (was "5.0.9")...
+    Updating package.json with dependency typescript @ "4.0.5" (was "3.9.7")...
+    Updating package.json with dependency @angular/animations @ "11.0.0" (was "10.0.14")...
+    Updating package.json with dependency @angular/common @ "11.0.0" (was "10.0.14")...
+    Updating package.json with dependency @angular/compiler @ "11.0.0" (was "10.0.14")...
+    Updating package.json with dependency @angular/core @ "11.0.0" (was "10.0.14")...
+    Updating package.json with dependency @angular/forms @ "11.0.0" (was "10.0.14")...
+    Updating package.json with dependency @angular/platform-browser @ "11.0.0" (was "10.0.14")...
+    Updating package.json with dependency @angular/platform-browser-dynamic @ "11.0.0" (was "10.0.14")...
+    Updating package.json with dependency @angular/router @ "11.0.0" (was "10.0.14")...
+  UPDATE package.json (1336 bytes)
+√ Packages installed successfully.
+** Executing migrations of package '@angular/cli' **
+
+> Removing "Solution Style" TypeScript configuration file support.
+  DELETE tsconfig.base.json
+  UPDATE tsconfig.json (458 bytes)
+  UPDATE tsconfig.app.json (287 bytes)
+  UPDATE tsconfig.spec.json (333 bytes)
+  UPDATE e2e/tsconfig.json (294 bytes)
+  Migration completed.
+
+> Replace deprecated library builder '@angular-devkit/build-ng-packagr'.
+  Migration completed.
+
+> Add 'declarationMap' compiler options for non production library builds.
+  Migration completed.
+
+> Remove deprecated options from 'angular.json' that are no longer present in v11.
+  UPDATE angular.json (4375 bytes)
+  Migration completed.
+
+> Update workspace dependencies to match a new v11 project.
+  UPDATE package.json (1337 bytes)
+√ Packages installed successfully.
+  Migration completed.
+
+** Executing migrations of package '@angular/core' **
+
+> In Angular version 11, the type of `AbstractControl.parent` can be `null` to reflect the runtime value more accurately.
+  This migration automatically adds non-null assertions to existing accesses of the `parent` property on types like `FormControl`, `FormArray` and `FormGroup`.
+
+> ViewEncapsulation.Native has been removed as of Angular version 11.
+  This migration replaces any usages with ViewEncapsulation.ShadowDom.
+  Migration completed.
+
+> NavigationExtras omissions migration.
+  In version 11, some unsupported properties were omitted from the `extras` parameter of the `Router.navigateByUrl` and `Router.createUrlTree` methods.
+  Migration completed.
+
+> Updates the `initialNavigation` property for `RouterModule.forRoot`.
+  Migration completed.
+
+  Migration completed.
+
+> The default value for `relativeLinkResolution` is changing from 'legacy' to 'corrected'.
+This migration updates `RouterModule` configurations that use the default value to
+now specifically use 'legacy' to prevent breakages when updating.
+  Migration completed.
+
+> `async` to `waitForAsync` migration.
+  The `async` testing function has been renamed to `waitForAsync` to avoid confusion with the native `async` keyword.
+  Migration completed.
+
+PS angular-material-base-theme> ng update
+Collecting installed dependencies...
+Found 31 dependencies.
+    We analyzed your package.json, there are some packages to update:
+
+      Name                               Version                  Command to update
+     --------------------------------------------------------------------------------
+      @angular/cdk                       10.2.2 -> 11.0.0         ng update @angular/cdk
+      @angular/material                  10.2.2 -> 11.0.0         ng update @angular/material
+      rxjs                               6.5.5 -> 6.6.3           ng update rxjs
+
+    There might be additional packages which don't provide 'ng update' capabilities that are outdated.
+    You can update the addition packages by running the update command of your package manager.
+PS angular-material-base-theme> code .
+PS angular-material-base-theme> ng update --force
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 31 dependencies.
+    We analyzed your package.json, there are some packages to update:
+
+      Name                               Version                  Command to update
+     --------------------------------------------------------------------------------
+      @angular/cdk                       10.2.2 -> 11.0.0         ng update @angular/cdk
+      @angular/material                  10.2.2 -> 11.0.0         ng update @angular/material
+      rxjs                               6.5.5 -> 6.6.3           ng update rxjs
+
+    There might be additional packages which don't provide 'ng update' capabilities that are outdated.
+    You can update the addition packages by running the update command of your package manager.
+
+
+    ディレクトリ: angular-material-base-theme
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       2020/10/14      0:33                .github
+d-----       2020/09/29     22:25                dist
+d-----       2020/09/27     21:53                e2e
+d-----       2020/11/13     11:59                node_modules
+d-----       2020/09/28     15:40                src
+-a----       2020/09/27     21:53            852 .browserslistrc
+-a----       2020/09/27     21:53            274 .editorconfig
+-a----       2020/09/27     21:53            631 .gitignore
+-a----       2020/11/13     11:59           4375 angular.json
+-a----       2020/09/27     21:53           1039 karma.conf.js
+-a----       2020/09/28     11:09          15537 ng-add-material-choose.png
+-a----       2020/11/13     11:59         548286 package-lock.json
+-a----       2020/11/13     11:59           1337 package.json
+-a----       2020/09/29     21:56           1762 README.md
+-a----       2020/11/13     11:59            287 tsconfig.app.json
+-a----       2020/11/13     11:59            458 tsconfig.json
+-a----       2020/11/13     11:59            333 tsconfig.spec.json
+-a----       2020/09/27     21:53           3184 tslint.json
+
+
+PS angular-material-base-theme> del .\node_modules\
+
+確認
+angular-material-base-theme\node_modules\ の項目には子があり、Recurse
+パラメーターが指定されていませんでした。続行した場合、項目と共にすべての子が削除されます。続行しますか?
+[Y] はい(Y)  [A] すべて続行(A)  [N] いいえ(N)  [L] すべて無視(L)  [S] 中断(S)  [?] ヘルプ (既定値は "Y"):
+
+
+PS angular-material-base-theme> npm i
+
+> core-js@3.6.5 postinstall angular-material-base-theme\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> @angular/cli@11.0.1 postinstall angular-material-base-theme\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+added 1522 packages from 1204 contributors and audited 1528 packages in 30.151s
+
+80 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS angular-material-base-theme> ng serve -o
+Compiling @angular/core : es2015 as esm2015
+Compiling @angular/cdk/keycodes : es2015 as esm2015
+Compiling @angular/animations : es2015 as esm2015
+Compiling @angular/cdk/observers : es2015 as esm2015
+Compiling @angular/animations/browser : es2015 as esm2015
+Compiling @angular/common : es2015 as esm2015
+Compiling @angular/cdk/collections : es2015 as esm2015
+Compiling @angular/cdk/platform : es2015 as esm2015
+Compiling @angular/platform-browser : es2015 as esm2015
+Compiling @angular/cdk/bidi : es2015 as esm2015
+Compiling @angular/cdk/a11y : es2015 as esm2015
+Compiling @angular/platform-browser/animations : es2015 as esm2015
+Compiling @angular/forms : es2015 as esm2015
+Compiling @angular/cdk/portal : es2015 as esm2015
+Compiling @angular/cdk/scrolling : es2015 as esm2015
+Compiling @angular/cdk/layout : es2015 as esm2015
+Compiling @angular/common/http : es2015 as esm2015
+Compiling @angular/material/core : es2015 as esm2015
+Compiling @angular/platform-browser-dynamic : es2015 as esm2015
+Compiling @angular/cdk/overlay : es2015 as esm2015
+Compiling @angular/material/divider : es2015 as esm2015
+Compiling @angular/material/button : es2015 as esm2015
+Compiling @angular/material/sidenav : es2015 as esm2015
+Compiling @angular/material/dialog : es2015 as esm2015
+Compiling @angular/material/snack-bar : es2015 as esm2015
+Compiling @angular/material/slider : es2015 as esm2015
+Compiling @angular/material/slide-toggle : es2015 as esm2015
+Compiling @angular/material/toolbar : es2015 as esm2015
+Compiling @angular/material/checkbox : es2015 as esm2015
+Compiling @angular/material/icon : es2015 as esm2015
+Compiling @angular/material/tooltip : es2015 as esm2015
+Compiling @angular/material/menu : es2015 as esm2015
+Compiling @angular/material/badge : es2015 as esm2015
+Compiling @angular/material/list : es2015 as esm2015
+√ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |      Size
+vendor.js             | vendor        |   4.32 MB
+styles.css, styles.js | styles        | 503.96 kB
+polyfills.js          | polyfills     | 481.08 kB
+main.js               | main          |  49.94 kB
+runtime.js            | runtime       |   6.15 kB
+
+                      | Initial Total |   5.34 MB
+
+Build at: 2020-11-13T03:04:46.031Z - Hash: 991e4fedffeb89935c4c - Time: 10594ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+√ Compiled successfully.
+√ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names  |      Size
+styles.css, styles.js | styles | 503.96 kB
+
+4 unchanged chunks
+
+Build at: 2020-11-13T03:04:47.751Z - Hash: 975808acf564adfc7465 - Time: 977ms
+
+√ Compiled successfully.
