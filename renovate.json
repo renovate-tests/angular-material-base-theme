@@ -1,7 +1,7 @@
 {
     "extends": [
       "config:base",
-      ":preserveSemverRanges",
-      "prHourlyLimit": 0
-    ]
+      ":preserveSemverRanges"
+    ],
+        "prHourlyLimit": 0
   }
